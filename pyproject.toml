@@ -1,0 +1,19 @@
+[tool.poetry]
+description = "Simple dashboard to view Timemator exports."
+authors = ["Richard Keil <hello@richartkeil.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+streamlit = "^1.32.2"
+ruff = "^0.3.4"
+pandas = "^2.2.1"
+matplotlib = "^3.8.3"
+watchdog = "^4.0.0"
+plotly = "^5.20.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
