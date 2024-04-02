@@ -65,7 +65,7 @@ for _, row in data.iterrows():
     )
 
 cumulative_data_df = pd.DataFrame(cumulative_data)
-cumulative_data_df["topic"].fillna("—", inplace=True)
+cumulative_data_df["topic"] = cumulative_data_df["topic"].fillna("—")
 cumulative_data_df["timestamp"] = pd.to_datetime(cumulative_data_df["timestamp"])
 cumulative_data_df.set_index("timestamp", inplace=True)
 
