@@ -12,6 +12,8 @@ pandas = "^2.2.1"
 matplotlib = "^3.8.3"
 watchdog = "^4.0.0"
 plotly = "^5.20.0"
+groq = "^0.4.2"
+python-dotenv = "^1.0.1"
 
 
 [build-system]
