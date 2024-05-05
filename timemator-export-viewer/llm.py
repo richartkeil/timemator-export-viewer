@@ -12,7 +12,7 @@ if not os.environ.get("GROQ_API_KEY"):
     st.stop()
 
 client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
-model = "llama2-70b-4096"
+model = "llama3-70b-8192"
 
 
 @st.cache_data
