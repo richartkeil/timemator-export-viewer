@@ -3,7 +3,10 @@ import os
 
 import pandas
 import streamlit as st
+from dotenv import find_dotenv, load_dotenv
 from groq import Groq
+
+load_dotenv(find_dotenv())
 
 if not os.environ.get("GROQ_API_KEY"):
     st.error(
