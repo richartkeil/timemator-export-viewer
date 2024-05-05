@@ -41,7 +41,8 @@ with col2:
 
 data = data[
     (data["datetime_begin"] >= pd.Timestamp(start_date))
-    & (data["datetime_end"] <= pd.Timestamp(end_date))
+    # Add one day to end date to include entries on that day:
+    & (data["datetime_end"] < pd.Timestamp(end_date) + pd.Timedelta(days=1))
 ]
 
 st.write(f"Number of Entries: {len(data)}")
